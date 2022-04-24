@@ -4,7 +4,7 @@ This is an open source react and next.js project, with all the basics tools and 
 
 ## Tech stack used
 
-- React (Functional components / Container components)
+- React (Functional components)
 - Next.js
 - Typescript
 - SCSS (BEM styling)
