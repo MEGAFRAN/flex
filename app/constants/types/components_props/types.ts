@@ -27,3 +27,23 @@ export type CardProps =
     description?: string,
     featured?: boolean
 }    
+
+export type TableProps =
+{
+    tableHeaders: [],
+    tableRows: []
+}  
+
+export type ImageProps =
+{
+    src: string,
+    height: string,
+    width: string,
+    loading: "eager" | "lazy"
+} 
+
+export type HeadingProps =
+{
+    title: string,
+    headingType: 'h1' | 'h2' | 'h3' | 'h4'
+} 

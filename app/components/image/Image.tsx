@@ -1,15 +1,13 @@
-import Image from 'next/image'
+import { ImageProps } from "../../constants/types/components_props/types"
 
-export const ImageContainer = ( {src, height, width, loading}: any ) =>
+export const ImageContainer = ( {src = "", height = "auto", width = "auto", loading = "eager"}: ImageProps ) =>
 {
 
     let imageName = src.substr(src.lastIndexOf('/') + 1)
 
     return (
 
-      <div className="image_container">
-
-        <Image 
+        <img 
           src={src}
           alt={imageName}
           height={height}
@@ -17,19 +15,6 @@ export const ImageContainer = ( {src, height, width, loading}: any ) =>
           loading={loading}
         />
 
-      </div>
-      
-    );
-
-}
-
-ImageContainer.defaultProps = 
-{ 
-
-  src: "",
-  alt: "default image",
-  height: "auto",
-  width: "auto",
-  loading: "eager"
+    )
 
 }

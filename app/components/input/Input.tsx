@@ -10,9 +10,8 @@ export const Input = ( {inputData}: any ) =>
     
     return (
 
-        <div className="input-container">
-            <input value={inputData} onChange={textHandler}/>
-        </div>  
+        <input value={inputData} onChange={textHandler}/>
+        
     )
 }
       

@@ -1,6 +1,6 @@
 import { TextProps } from "../../constants/types/components_props/types"
 
-export const Text = ( {text, alignment}: TextProps ) =>
+export const Text = ( {text = "default title", alignment = "left"}: TextProps ) =>
 {
 
     return (
@@ -13,10 +13,4 @@ export const Text = ( {text, alignment}: TextProps ) =>
         
     )
     
-}
-
-Text.defaultProps = 
-{ 
-    text: "default title"
-
 }
